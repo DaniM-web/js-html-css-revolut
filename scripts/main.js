@@ -1,22 +1,20 @@
 var dropMenu = $('.drop-to-show');
 var itemHover = $('.item-menu-r');
 var prova = $('body');
-var showed = false;
+var showed = "hidden";
 
-itemHover.mouseenter(
+itemHover.click(
   function() {
-    var current = $(this).parent();
-    $(this).children("div").addClass('classadd');
+    // var current = $(this).parent();
 
-
-
-
+    $(this).children("div").addClass('classAdd');
+    showed = "visible";
   }
 );
 
-//   prova.click(
-//   function() {
-//     dropMenu.removeClass('classadd');
-//
-//   }
-// );
+itemHover.click(
+  function() {
+      $(this).children("div").removeClass('classAdd');
+      showed = "hidden";
+    }
+  );

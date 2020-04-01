@@ -36,21 +36,29 @@ header{
   align-items: center;
 }
 .sx-block{
-  width: 50%;
+  flex-basis: 50%;
   height: 100%;
   text-transform: uppercase;
   display: flex;
   align-content: center;
+  flex-grow: 1;
+  flex-wrap: nowrap;
 
 }
 .dx-block{
-  width: 50%;
+  flex-basis: 50%;
   height: 100%;
   display: flex;
   justify-content: flex-end;
   align-content: center;
+  flex-grow: 1;
+  flex-wrap: nowrap;
 
 }
+/* ul.header-menu-list{
+  display: flex;
+  flex-basis: 100%;
+} */
 
 ul{
   list-style-type: none;
@@ -95,16 +103,31 @@ a.get-botton:hover{
 
 .drop-to-show{
   position: absolute;
+  background: white;
   box-shadow: rgba(0, 0, 0, 0.04) 0px 0px 4px 0px, rgba(0, 0, 0, 0.08) 0px 8px 16px 0px;
   margin-top: 15px;
   padding: 20px;
-  background-color: red;
+
   display: none;
 }
 .drop-list{
   line-height: 40px;
 }
 
-.classadd.active{
+.classadd{
   display: block;
+}
+
+.burger-menu{
+  display: none;
+}
+
+@media all and (max-width: 1080px){
+  .dx-block{
+    display: none;
+  }
+
+  .burger-menu{
+    display: block;
+  }
 }
