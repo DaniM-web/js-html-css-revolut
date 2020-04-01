@@ -1,0 +1,92 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 100vw;
+
+  font-family: 'Roboto', -apple-system, "Helvetica Neue", Helvetica, "Segoe UI", Arial, sans-serif;
+}
+a:active,
+a:visited,
+a:link,
+a{
+  text-decoration: none;
+  color: rgb(25,28,31);
+  opacity: 0.6;
+  font-size: 16px;
+}
+a:hover{
+  opacity: 1;
+}
+
+.centratura {
+  margin: 0 15%;
+  width: 70%;
+}
+
+header{
+  width: 100%;
+  min-height: 100px;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sx-block{
+  width: 50%;
+  height: 100%;
+  text-transform: uppercase;
+  display: flex;
+  align-content: center;
+
+}
+.dx-block{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+
+}
+
+ul{
+  list-style-type: none;
+  list-style-position: inside;
+}
+
+ul.header-menu-list li{
+  display: inline-block;
+  margin-right: 20px;
+  height: 100%;
+}
+
+img.logo{
+  width: 100px;
+  height: auto;
+  margin-right: 40px;
+  vertical-align: middle;
+}
+
+a.personal{
+  opacity: 1;
+  font-weight: bold;
+}
+
+a.get-botton{
+  color: #fff;
+  background-color: rgb(235, 0, 141);
+  padding: 10px 20px;
+  opacity: 1;
+  border-radius: 2rem;
+  transition: 0.3s ease-in;
+  margin-right: 0;
+}
+a.get-botton:hover{
+  background-color: rgb(210, 0, 126);
+}
+
+.anchor-relative{
+  position: relative;
+}
